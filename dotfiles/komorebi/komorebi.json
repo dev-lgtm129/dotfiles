@@ -1,0 +1,115 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.39/schema.json",
+  "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  "default_workspace_padding": 9,
+  "default_container_padding": 6,
+  "border": true,
+"border_implementation": "Komorebi",
+"border_style": "Rounded",
+"border_width": 6,
+"border_offset": 0,
+"border_colours": {
+  "single": "#94988A",
+  "stack": "#94988A",
+  "floating": "#94988A",
+  "monocle": "#94988A",
+  "unfocused": "#000000"
+},
+  "mouse_follows_focus": true,
+  "transparency": true,
+  "transparency_alpha": 250,
+  "animation": {
+    "enabled":true,
+    "duration":220,
+    "fps": 120,
+    "style":{
+      "movement": "EaseOutCubic",
+      "transparency":"EaseInCubic"
+    } 
+  },
+  "stackbar": {
+    "height": 24,
+    "mode": "Never",
+    "label": "Title",
+    "tabs": {
+      "width": 200,
+      "font_size": 16
+    }
+  },
+  "monitors": [
+  {
+    "workspaces": [
+      {
+        "name": "I",
+        "layout": "BSP"
+      },
+      {
+        "name": "II",
+        "layout": "VerticalStack"
+      },
+      {
+        "name": "III",
+        "layout": "BSP"
+      },
+      {
+        "name": "IV",
+        "layout": "BSP"
+      },
+      {
+        "name": "V",
+        "layout": "Rows"
+      },
+      {
+        "name": "VI",
+        "layout": "Grid"
+      },
+      {
+        "name": "VII",
+        "layout": "RightMainVerticalStack"
+      }
+    ]
+    }
+  ],
+  "ignore_rules": [
+  {
+    "kind": "Title",
+    "id": "New Download",
+    "matching_strategy": "Contains"
+  },
+  {
+    "kind": "Title",
+    "id": "Download Progress",
+    "matching_strategy": "Contains"
+  },
+  {
+    "kind": "Class",
+    "id": "SunAwtDialog",
+    "matching_strategy": "Equals"
+  },
+  {
+    "kind": "Exe",
+    "id": "Colorpicker.exe",
+    "matching_strategy": "Equals"
+  },
+  {
+    "kind": "Exe",
+    "id": "MgsGroundZeroes.exe",
+    "matching_strategy": "Equals"
+  }
+  
+], 
+"manage_rules": [
+  {
+    "kind": "Exe",
+    "id": "WindowsTerminal.exe",
+    "matching_strategy": "Equals"
+  },
+  {
+    "kind": "Title",
+    "id": "Claude.exe",
+    "matching_strategy": "Equals"
+  }
+]
+}
